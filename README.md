@@ -12,3 +12,9 @@ The R script, `run_analysis.R`, does the following:
 * From the data set in step 4, creates a second, independent tidy data set with the average of
    each variable for each activity and each subject.
 * Saves results into destination folder
+ 
+For using this script as one command to get the result you need
+
+* put scirpt in your work directory with Samsung data("UCI HAR Dataset.zip") in it
+* Run the command  - Source(paste(getwd(),'/run_analysis.R', sep=''))
+* Run the command getTidyData()

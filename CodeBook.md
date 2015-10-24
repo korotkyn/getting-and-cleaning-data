@@ -21,6 +21,14 @@
 * Saves the mean and std into 'TidyData\mean_and_std.csv'(using write.csv) and 'TidyData\mean_and_std.txt'(using write.table functions)
 * Saves the tidy dataset into 'TidyData\tidy_dataset.csv' and 'TidyData\tidy_dataset.txt'
 
+## using 'run_analysis.R'
+
+For using this script as one command to get the result you need
+
+* put scirpt in your work directory with Samsung data("UCI HAR Dataset.zip") in it
+* Run the command  - Source(paste(getwd(),'/run_analysis.R', sep=''))
+* Run the command getTidyData()
+
 ## mean_and_std.csv(txt) dataset
 
 contains 1 0300 (with a header row) rows and 82 columns (enumeration column + 81 variables) in csv format
