@@ -18,10 +18,10 @@
 * Rearrange the data by 'id'
 * Loads 'activity_labels.txt'
 * Changes the data activity row to use the activity labels
-* Saves the mean and std into 'TidyData\mean_and_std.csv'(using savedata function)
-* Saves the tidy dataset into 'TidyData\tidy_dataset.csv'(using savedata function)
+* Saves the mean and std into 'TidyData\mean_and_std.csv'(using write.csv) and 'TidyData\mean_and_std.txt'(using write.table functions)
+* Saves the tidy dataset into 'TidyData\tidy_dataset.csv' and 'TidyData\tidy_dataset.txt'
 
-## mean_and_std.csv dataset
+## mean_and_std.csv(txt) dataset
 
 contains 1 0300 (with a header row) rows and 82 columns (enumeration column + 81 variables) in csv format
 
@@ -110,7 +110,7 @@ contains 1 0300 (with a header row) rows and 82 columns (enumeration column + 81
 * 'fBodyBodyGyroJerkMag.meanFreq..'
 
 
-## tidy_dataset.csv dataset
+## tidy_dataset.csv(txt) dataset
 
 contains 181 rows (with header) and 82 columns (enumeration column + 81 variables) in csv format
 
