@@ -147,9 +147,10 @@ getTidyData <- function (){
         # 5) From the data set in step 4, creates a second, independent tidy data set with the average of
         #    each variable for each activity and each subject(using ddply function)
         tidy_dataset <- ddply(mean_and_std, .(id, activity), .fun=function(x){ colMeans(x[,-c(1:2)]) })
-        #View(tidy_dataset)
+        tidy_dataset <- mutate(tidy_dataset,activity = activity_labels[activity,2])
 
         colnames(tidy_dataset)[-c(1:2)] <- paste(colnames(tidy_dataset)[-c(1:2)], "_mean", sep="")
+        View(tidy_dataset)
         #Saving results
         saveResult(tidy_dataset,"tidy_dataset")
         print("Work done. Good luck!")
